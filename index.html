@@ -9,24 +9,24 @@
 </head>
 <body>
     <header>
-        <div id="navhomepage">
+        <div class="navhomepage">
             <img src="./images/logo/ohmyfood.png" alt="logoohmyfood">
         </div>
-        <form>
-            <i class="fa-solid fa-location-dot" style="color: #000000;"></i>
-            <input type="text" placeholder="Paris, Belleville" maxlength="35">
-        </form>
     </header>
     <main>
         <section>
-            <div>
+            <div class="header-sous-bloc">
+                <i class="fa-solid fa-location-dot" style="color: #000000;"></i>
+                <p>Paris, Belleville</p>
+            </div>
+            <div class="top-bloc">
                 <h2>Réservez le menu qui vous convient</h2>
                 <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
                 <button>Explorer nos restaurants</button>
             </div>
         </section>
         <section>
-            <div>
+            <div class="mid-bloc">
                 <h2>Fonctionnement</h2>
                 <div>
                     <div class="numero-etiquette">
@@ -48,9 +48,56 @@
                 </div>
             </div>
         </section>
+        <section>
+            <div class="restaurants">
+                <h2>Restaurants</h2>
+                <article class="card">
+                    <div class="image-resto">
+                        <p class="etiquette">Nouveau</p>
+                    </div>
+                    <div>
+                        <h3>La palette du goût</h3>
+                        <p>Ménilmontant</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="image-resto">
+                        <p class="etiquette">Nouveau</p>
+                    </div>
+                    <div>
+                        <h3>La note enchantée</h3>
+                        <p>Charonne</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="image-resto">
+
+                    </div>
+                    <div>
+                        <h3>À la française</h3>
+                        <p>Cité Rouge</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="image-resto">
+                        
+                    </div>
+                    <div>
+                        <h3>Le délice des sens</h3>
+                        <p>Folie-Méricourt</p>
+                    </div>
+                </article>
+            </div>
+        </section>
     </main>
     <footer>
-        
+        <div class="footer-bloc">
+            <h4>Ohmyfood</h4>
+            <a href="#"><i class="fa-solid fa-utensils" style="color: #000000;"></i> Proposer un restaurant</a>
+            <a href="#"><i class="fa-solid fa-handshake-angle" style="color: #000000;"></i> Devenir partenaire</a>
+            <a href="#">Mentions légales</a>
+            <a href="#">Contact</a>
+        </div>
     </footer>
 </body>
 </html>

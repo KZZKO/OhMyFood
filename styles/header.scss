@@ -1,3 +1,23 @@
 // import des paramètres
 
 @import "./settings.scss";
+
+// Ajustement du header-homepage
+
+header {
+
+    .navhomepage {
+
+        display: flex;
+        justify-content: center;
+        padding: 15px 0;
+        background: $color-white;
+        box-shadow: 0px 1px 5px $color-grey;
+
+        img {
+            height: 30px;
+        }
+
+    }
+
+}

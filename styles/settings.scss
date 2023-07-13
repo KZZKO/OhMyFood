@@ -3,15 +3,48 @@
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tr: #99E2D0;
+$color-td: #008766;
+
+// Nuance du site
+
+$color-fond-gris: #EAEAEA;
+$color-fond-whitegrey: #F6F6F6;
+$color-black: #000000;
+$color-midgrey: #5e5e5e;
+$color-grey: #a5a5a5;
+$color-white: #ffffff;
 
 // Police du site
 
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@font-face {
+    font-family: 'Shrikhand';
+    src: url(../fonts/Shrikhand/Shrikhand-Regular.ttf);
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto bold';
+    src: url(../fonts/Roboto/Roboto-Black.ttf);
+}
+
+
+// Mixins et variables
 
 $font-logo-title: 'Shrikhand';
 
 $font-text: 'Roboto';
 
-// Mixins
+$font-text-bold: 'Roboto bold';
+
+// Ajustement du site
+
+body {
+    max-width: 375px;
+    margin: 0;
+    padding: 0;
+    background: $color-fond-gris;
+}
