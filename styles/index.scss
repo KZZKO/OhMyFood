@@ -12,13 +12,33 @@
     display: flex;
     justify-content: center;
     padding: 20px 0;
-    gap: 18px;
+    gap: 15px;
     font-family: $font-text;
 
-    p {
-        margin: -1px 0;
+    input {
+        width: 30%;
+        margin: -2px 0;
         font-weight: 600;
+        font-size: 0.9em;
+        border: 2px solid transparent;
+        background-color: $color-fond-gris;
+
+        &::placeholder {
+            color: $color-police-darkgrey;
+        }
+
+        &:focus {
+
+            outline: none;
+            border-bottom: 2px solid $color-grey;
+        }
+
+        &:hover {
+            border-bottom: 2px solid $color-grey;
+            cursor: pointer;
+        }
     }
+
 }
 
 .top-bloc {
@@ -36,7 +56,7 @@
         width: 80%;
         text-align: center;
         margin: 0 auto;
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     p {
@@ -51,7 +71,9 @@
         font-family: $font-text;
         padding: 15px 15px;
         width: 70%;
-        margin: 20px auto;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 25px;
         border-radius: 30px;
         border: none;
         font-weight: 500;
@@ -65,6 +87,69 @@
             cursor: pointer;
             filter: brightness(1.1);
             box-shadow: 0px 2px 8px 4px $color-grey;
+        }
+    }
+
+}
+
+// Deuxième bloc du site
+
+.mid-bloc {
+
+    background: $color-white;
+    padding: 20px;
+    font-family: $font-text;
+
+    h2 {
+        margin: 0 auto;
+        font-weight: 600;
+        font-family: $font-text-bold;
+        margin: 20px 0;
+    }
+
+
+    .bloc-fonctionnement {
+        display: flex;
+        border-radius: 20px;
+        box-shadow: 0px 5px 10px 2px $shadow-light-grey;
+        background: $color-fond-whitegrey;
+        padding: 25px;
+        width: 85%;
+        margin: 0 auto;
+        margin-left: 5px;
+        margin-bottom: 20px;
+
+        .numero-fonctionnement {
+
+            position: relative;
+
+            p {
+                position: absolute;
+                left: -36px;
+                margin: 0 auto;
+                padding: 4px 8px;
+                border-radius: 30px;
+                color: $color-white;
+                background: $color-primary;
+                font-size: 0.8em;
+                font-weight: 500;
+            }
+
+        }
+
+        p {
+            margin: 0;
+            font-weight: 600;
+
+            i {
+                font-size: large;
+                margin-left: 10px;
+                margin-right: 20px;
+            }
+        }
+
+        &:nth-child(4) {
+            margin-bottom: 40px;
         }
     }
 
