@@ -154,3 +154,83 @@
     }
 
 }
+
+// Troisième bloc du site
+
+.restaurants {
+
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-bottom: 70px;
+    background: $color-fond-whitegrey;
+    gap: 18px;
+
+    h2 {
+
+        font-family: $font-text-bold;
+        margin: 0;
+        margin-top: 35px;
+        margin-bottom: 5px;
+
+    }
+
+    .card {
+        position: relative;
+        border-radius: 20px;
+
+        .image-resto {
+
+            background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+            background-size: 360px;
+            background-repeat: no-repeat;
+            background-position: right 10% bottom 10%;
+            height: 170px;
+            border-radius: 20px 20px 0 0;
+
+            .etiquette {
+
+                position: absolute;
+                width: 18%;
+                padding: 5px 10px;
+                margin: 0;
+                color: $color-td;
+                background: $color-tr;
+                font-family: $font-text;
+                font-weight: 600;
+                font-size: 0.9em;
+                border-radius: 2px;
+                top: 13px;
+                left: 240px;
+
+            }
+
+        }
+
+        .card-bottom {
+
+            background: $color-white;
+            border-radius: 0 0 20px 20px;
+            line-height: 23px;
+            padding: 10px;
+
+            h3 {
+                margin: 0;
+                font-family: $font-text-bold;
+                font-size: 1.1em;
+
+            }
+
+            p {
+                margin: 0;
+                font-family: $font-text;
+                font-size: 1em;
+                color: $color-police-darkgrey;
+
+            }
+
+        }
+
+    }
+
+}

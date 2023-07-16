@@ -50,6 +50,11 @@ $font-text-bold: 'Roboto bold';
 
 // Ajustement du site
 
+* {
+    scroll-behavior: smooth;
+}
+
+
 body {
     max-width: 375px;
     margin: 0;

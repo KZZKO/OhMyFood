@@ -1,3 +1,69 @@
 // import des paramètres
 
 @import "./settings.scss";
+
+
+// Paramètres du footer
+
+footer {
+
+    .footer-bloc {
+
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        background: $color-police-darkgrey;
+        color: $color-white;
+        padding: 25px;
+
+        h4 {
+            margin: 0;
+            margin-bottom: 3%;
+            font-size: 1.1em;
+            font-family: $font-logo-title;
+            font-weight: 500;
+        }
+
+        .links {
+
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+
+            .footer-icon {
+                text-decoration: none;
+                font-family: $font-text;
+                gap: 10px;
+
+
+                i {
+                    font-size: smaller;
+
+                }
+
+            }
+
+            a {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                text-decoration: none;
+                font-family: $font-text;
+                color: $color-white;
+
+                &:visited {
+                    color: $color-white;
+                }
+
+                &:active {
+                    color: $color-white;
+                }
+            }
+
+        }
+
+
+    }
+
+}

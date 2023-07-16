@@ -1,0 +1,5 @@
+- Ajouter bouton coeur 
+- Image restaurants 
+- Card restaurants dans un lien 
+- Régler espacement deuxième icon footer 
+- Lien 100% footer 
