@@ -18,47 +18,54 @@ footer {
 
         h4 {
             margin: 0;
-            margin-bottom: 3%;
             font-size: 1.1em;
             font-family: $font-logo-title;
             font-weight: 500;
         }
 
-        .links {
+        ul {
 
             display: flex;
             flex-direction: column;
+            padding: 0;
             gap: 8px;
+            margin: 0;
+            margin-top: 15px;
+
+            li {
+
+                list-style: none;
+
+                .footer-icon {
+                    text-decoration: none;
+                    font-family: $font-text;
+                    gap: 10px;
 
 
-            .footer-icon {
-                text-decoration: none;
-                font-family: $font-text;
-                gap: 10px;
+                    i {
 
+                        margin-right: 10px;
 
-                i {
-                    font-size: smaller;
+                    }
 
                 }
 
-            }
+                a {
 
-            a {
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
-                text-decoration: none;
-                font-family: $font-text;
-                color: $color-white;
-
-                &:visited {
+                    text-decoration: none;
+                    font-family: $font-text;
                     color: $color-white;
+
+                    &:visited {
+                        color: $color-white;
+                    }
+
+                    &:active {
+                        color: $color-white;
+                    }
+
                 }
 
-                &:active {
-                    color: $color-white;
-                }
             }
 
         }

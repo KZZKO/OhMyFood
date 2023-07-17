@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>OhMyFood - Accueil</title>
+    <title>OhMyFood - Recherche</title>
 </head>
 <body>
     <header>
@@ -51,54 +51,82 @@
         <section>
             <div class="restaurants">
                 <h2>Restaurants</h2>
-                <article class="card">
-                    <div class="image-resto">
-                        <p class="etiquette">Nouveau</p>
-                    </div>
-                    <div class="card-bottom">
-                        <h3>La palette du goût</h3>
-                        <p>Ménilmontant</p>
-                    </div>
-                </article>
-                <article class="card">
-                    <div class="image-resto">
-                        <p class="etiquette">Nouveau</p>
-                    </div>
-                    <div class="card-bottom">
-                        <h3>La note enchantée</h3>
-                        <p>Charonne</p>
-                    </div>
-                </article>
-                <article class="card">
-                    <div class="image-resto">
-
-                    </div>
-                    <div class="card-bottom">
-                        <h3>À la française</h3>
-                        <p>Cité Rouge</p>
-                    </div>
-                </article>
-                <article class="card">
-                    <div class="image-resto">
-                        
-                    </div>
-                    <div class="card-bottom">
-                        <h3>Le délice des sens</h3>
-                        <p>Folie-Méricourt</p>
-                    </div>
-                </article>
+                <a class="links-restaurants" href="#">
+                    <article class="card">
+                        <div id="image-resto-un">
+                            <p id="first-etiquette">Nouveau</p>
+                        </div>
+                        <div class="card-bottom">
+                            <div>
+                                <h3>La palette du goût</h3>
+                                <p>Ménilmontant</p>
+                            </div>
+                            <div class="card-heart">
+                                <i class="fa-solid fa-heart fa-xl" style="color: #000000;"></i>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+                <a class="links-restaurants" href="#">
+                    <article class="card">
+                        <div id="image-resto-deux">
+                            <p id="second-etiquette">Nouveau</p>
+                        </div>
+                        <div class="card-bottom">
+                            <div>
+                                <h3>La note enchantée</h3>
+                                <p>Charonne</p>
+                            </div>
+                            <div class="card-heart">
+                                <i class="fa-regular fa-heart fa-xl" style="color: #000000;"></i>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+                <a class="links-restaurants" href="#">
+                    <article class="card">
+                        <div id="image-resto-trois">
+                            
+                        </div>
+                        <div class="card-bottom">
+                            <div>
+                                <h3>À la française</h3>
+                                <p>Cité Rouge</p>
+                            </div>
+                            <div class="card-heart">
+                                <i class="fa-regular fa-heart fa-xl" style="color: #000000;"></i>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+                <a class="links-restaurants" href="#">
+                    <article class="card">
+                        <div id="image-resto-quatre">
+                            
+                        </div>
+                        <div class="card-bottom">
+                            <div>
+                                <h3>Le délice des sens</h3>
+                                <p>Folie-Méricourt</p>
+                            </div>
+                            <div class="card-heart">
+                                <i class="fa-regular fa-heart fa-xl" style="color: #000000;"></i>
+                            </div>
+                        </div>
+                    </article>
+                </a>
             </div>
         </section>
     </main>
     <footer>
         <div class="footer-bloc">
-            <h4>Ohmyfood</h4>
-            <div class="links">
-                <a class="footer-icon" href="#"><i class="fa-solid fa-utensils" style="color: #ffffff;"></i>Proposer un restaurant</a>
-                <a class="footer-icon" href="#"><i class="fa-solid fa-handshake-angle" style="color: #ffffff;"></i>Devenir partenaire</a>
-                <a href="#">Mentions légales</a>
-                <a href="#">Contact</a>
-            </div>
+            <h4>ohmyfood</h4>
+            <ul>
+                <li><a class="footer-icon" href="#"><i class="fa-solid fa-utensils" style="color: #ffffff;"></i>Proposer un restaurant</a></li>
+                <li><a class="footer-icon" href="#"><i class="fa-solid fa-handshake-angle fa-xs" style="color: #ffffff;"></i>Devenir partenaire</a></li>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="mailto:bernard@hotmail.fr">Contact</a></li>
+            </ul>
         </div>
     </footer>
 </body>

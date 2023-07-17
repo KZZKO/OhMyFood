@@ -11,12 +11,12 @@
 
     display: flex;
     justify-content: center;
-    padding: 20px 0;
+    padding: 15px 0;
     gap: 15px;
     font-family: $font-text;
 
     input {
-        width: 30%;
+        width: 28%;
         margin: -2px 0;
         font-weight: 600;
         font-size: 0.9em;
@@ -125,7 +125,7 @@
 
             p {
                 position: absolute;
-                left: -36px;
+                left: -37px;
                 margin: 0 auto;
                 padding: 4px 8px;
                 border-radius: 30px;
@@ -175,62 +175,148 @@
 
     }
 
-    .card {
-        position: relative;
-        border-radius: 20px;
+    .links-restaurants {
 
-        .image-resto {
+        text-decoration: none;
+        border-radius: 20px 20px 20px 20px;
+        color: $color-police-darkgrey;
 
-            background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-            background-size: 360px;
-            background-repeat: no-repeat;
-            background-position: right 10% bottom 10%;
-            height: 170px;
-            border-radius: 20px 20px 0 0;
-
-            .etiquette {
-
-                position: absolute;
-                width: 18%;
-                padding: 5px 10px;
-                margin: 0;
-                color: $color-td;
-                background: $color-tr;
-                font-family: $font-text;
-                font-weight: 600;
-                font-size: 0.9em;
-                border-radius: 2px;
-                top: 13px;
-                left: 240px;
-
-            }
-
+        &:visited {
+            color: $color-police-darkgrey;
         }
 
-        .card-bottom {
+        &:active {
+            color: $color-police-darkgrey;
+        }
 
-            background: $color-white;
-            border-radius: 0 0 20px 20px;
-            line-height: 23px;
-            padding: 10px;
+        .card {
+            position: relative;
+            border-radius: 20px;
 
-            h3 {
-                margin: 0;
-                font-family: $font-text-bold;
-                font-size: 1.1em;
+            #image-resto-un {
+
+                background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+                background-size: 360px;
+                background-repeat: no-repeat;
+                background-position: right 10% bottom 10%;
+                height: 170px;
+                border-radius: 20px 20px 0 0;
+
+                #first-etiquette {
+
+                    position: absolute;
+                    width: 18%;
+                    padding: 5px 10px;
+                    margin: 0;
+                    color: $color-td;
+                    background: $color-tr;
+                    font-family: $font-text;
+                    font-weight: 600;
+                    font-size: 0.9em;
+                    border-radius: 2px;
+                    top: 13px;
+                    left: 240px;
+
+                }
 
             }
 
-            p {
-                margin: 0;
-                font-family: $font-text;
-                font-size: 1em;
-                color: $color-police-darkgrey;
+            #image-resto-deux {
+
+                background-image: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+                background-size: 340px;
+                background-repeat: no-repeat;
+                background-position: right 10% bottom 39%;
+                height: 170px;
+                border-radius: 20px 20px 0 0;
+
+                #second-etiquette {
+
+                    position: absolute;
+                    width: 18%;
+                    padding: 5px 10px;
+                    margin: 0;
+                    color: $color-td;
+                    background: $color-tr;
+                    font-family: $font-text;
+                    font-weight: 600;
+                    font-size: 0.9em;
+                    border-radius: 2px;
+                    top: 13px;
+                    left: 240px;
+
+                }
+
+            }
+
+            #image-resto-trois {
+
+                background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+                background-size: 340px;
+                background-repeat: no-repeat;
+                background-position: left 30% bottom 0%;
+                height: 170px;
+                border-radius: 20px 20px 0 0;
+
+            }
+
+            #image-resto-quatre {
+
+                background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+                background-size: 350px;
+                background-repeat: no-repeat;
+                background-position: right 10% bottom 10%;
+                height: 170px;
+                border-radius: 20px 20px 0 0;
+
+            }
+
+            .card-bottom {
+
+                display: flex;
+                justify-content: space-between;
+                background: $color-white;
+                border-radius: 0 0 20px 20px;
+                line-height: 23px;
+                padding: 15px 10px;
+
+                h3 {
+                    margin: 0;
+                    font-family: $font-text-bold;
+                    font-size: 1.1em;
+
+                }
+
+                p {
+                    margin: 0;
+                    font-family: $font-text;
+                    font-size: 1em;
+                    color: $color-police-darkgrey;
+
+                }
+
+                .card-heart {
+
+                    margin: 5px 15px;
+
+                    i {
+
+                        font-weight: 400;
+                        transition: color 0.4s ease;
+                        z-index: 52;
+
+                        &:hover {
+
+                            color: red;
+
+                        }
+                    }
+
+                }
 
             }
 
         }
 
     }
-
 }

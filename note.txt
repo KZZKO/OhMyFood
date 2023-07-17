@@ -1,5 +1,3 @@
-- Ajouter bouton coeur 
-- Image restaurants 
-- Card restaurants dans un lien 
-- Régler espacement deuxième icon footer 
-- Lien 100% footer 
+- Animation + coeur a finir
+- scroll Animation des menus
+- Loader
