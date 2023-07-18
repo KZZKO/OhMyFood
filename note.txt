@@ -1,3 +1,4 @@
 - Animation + coeur a finir
-- scroll Animation des menus
-- Loader
+- scroll Animation des menus (parti resto)
+- Loader keyframes disappear
+- Changer de favicon

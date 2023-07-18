@@ -1,6 +1,6 @@
 // import des paramètres
 
-@import "./settings.scss";
+@import "../settings.scss";
 
 
 // Paramètres du footer
@@ -15,6 +15,7 @@ footer {
         background: $color-police-darkgrey;
         color: $color-white;
         padding: 25px;
+
 
         h4 {
             margin: 0;
