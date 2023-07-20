@@ -1,1 +1,2 @@
 - scroll Animation des menus (parti resto)
+- SASS à faire sur les menus

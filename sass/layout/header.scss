@@ -10,13 +10,39 @@ header {
 
         display: flex;
         justify-content: center;
-        padding: 15px 0;
+        padding: 10px 0;
         background: $color-white;
         box-shadow: 0px 1px 5px $color-grey;
 
         img {
             height: 30px;
             margin-top: 10px;
+        }
+
+    }
+
+    .navmenu {
+
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+
+        // div {
+
+        //     img {}
+
+        // }
+
+        a {
+
+            position: absolute;
+            left: 20px;
+            top: 25px;
+
+            // i {}
+
         }
 
     }
