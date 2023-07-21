@@ -1,1 +1,8 @@
-- scroll Animation des menus (parti resto)
+A faire:
+
+- Réglage photo dans les menus
+- hover vert dans les menus
+- Progression du remplissage du coeur 
+- Loader, bonne dimmension
+- Régler étiquette "Nouveau" pour qu'elles soient fixes
+- Responsive

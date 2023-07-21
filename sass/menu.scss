@@ -130,9 +130,25 @@ main {
                     padding: 12px 12px;
                     border-radius: 15px;
                     margin-bottom: 12px;
-                    box-shadow: 0px 3px 10px 0px #d3d3d3ab;
+                    box-shadow: 0px 3px 10px 0px $shadow-card-menu;
+                    animation: appear 1.5s;
 
                     .menu-one {
+
+                        @keyframes appear {
+
+                            100% {
+
+                                transform: translateY(0%);
+                                opacity: 1;
+                            }
+
+                            0% {
+
+                                transform: translateY(50%);
+                                opacity: 0.1;
+                            }
+                        }
 
                         h4 {
 
