@@ -25,26 +25,34 @@ header {
 
         position: relative;
         display: flex;
-        flex-direction: row-reverse;
         justify-content: center;
         align-items: center;
 
-        // div {
+        div {
 
-        //     img {}
+            a {
 
-        // }
+                position: absolute;
+                left: 20px;
+                top: 25px;
 
-        a {
+                i {
 
-            position: absolute;
-            left: 20px;
-            top: 25px;
+                    transition: 0.4s ease;
 
-            // i {}
+                    &:hover {
 
+                        filter: opacity(0.5);
+
+                    }
+
+                }
+
+                // img {
+
+                // }
+            }
         }
 
     }
-
 }

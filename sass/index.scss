@@ -4,6 +4,7 @@
 @import "../sass/layout/loader.scss";
 @import "../sass/layout/header.scss";
 @import "../sass/layout/footer.scss";
+@import "../sass/menu.scss";
 
 
 // Premier bloc du site
@@ -197,6 +198,7 @@
         .card {
             position: relative;
             border-radius: 20px;
+            box-shadow: 0px 5px 10px 1px #dddddd5e;
 
             #image-resto-un {
 
@@ -313,11 +315,12 @@
                         height: 27px;
                         fill: $color-white;
                         stroke: $color-black;
-                        stroke-width: 1.1;
+                        stroke-width: 1;
+
 
                         &:hover {
 
-                            fill: $color-secondary;
+                            fill: url(#gradient-heart);
                             stroke: transparent;
 
                         }

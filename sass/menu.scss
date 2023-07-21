@@ -6,3 +6,185 @@
 
 
 // Premier bloc du menu
+
+main {
+
+    #menu-pic-one {
+
+        background-image: url(../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+        background-size: 340px;
+        background-repeat: no-repeat;
+        background-position: left 30% bottom 0%;
+        height: 170px;
+
+    }
+
+    #menu-pic-two {
+
+        background-image: url(../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+        background-size: 340px;
+        background-repeat: no-repeat;
+        background-position: left 30% bottom 0%;
+        height: 170px;
+
+    }
+
+    #menu-pic-three {
+
+        background-image: url(../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+        background-size: 340px;
+        background-repeat: no-repeat;
+        background-position: left 30% bottom 0%;
+        height: 170px;
+
+    }
+
+    #menu-pic-four {
+
+        background-image: url(../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+        background-size: 340px;
+        background-repeat: no-repeat;
+        background-position: left 30% bottom 0%;
+        height: 170px;
+
+    }
+
+    section {
+
+        .menu-box {
+
+            background: $color-fond-whitegrey;
+            padding: 12px;
+            border-radius: 40px 40px 0 0;
+
+            .menu-title {
+
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 15px 2px;
+
+                h2 {
+
+                    font-family: $font-logo-title;
+                    font-weight: 500;
+                    margin: 0;
+                }
+
+                .menu-heart {
+
+                    width: 27px;
+                    height: 27px;
+                    margin-right: 30px;
+
+                    svg {
+
+                        width: 27px;
+                        height: 27px;
+                        fill: $color-fond-whitegrey;
+                        stroke: $color-black;
+                        stroke-width: 1;
+
+                        &:hover {
+
+                            fill: url(#gradient-heart);
+                            stroke: transparent;
+
+                        }
+
+                    }
+                }
+            }
+
+            .menu-box-card {
+
+                font-family: $font-text;
+
+                h3 {
+
+                    position: relative;
+                    margin: 20px 0;
+                    margin-top: 35px;
+                    font-weight: 400;
+                    font-size: 1em;
+
+
+                    &::before {
+
+                        content: "";
+                        height: 3px;
+                        width: 11.5%;
+                        top: 23px;
+                        position: absolute;
+                        background: $color-tr;
+
+                    }
+                }
+
+                .menu-card {
+
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                    background: $color-white;
+                    padding: 12px 12px;
+                    border-radius: 15px;
+                    margin-bottom: 12px;
+                    box-shadow: 0px 3px 10px 0px #d3d3d3ab;
+
+                    .menu-one {
+
+                        h4 {
+
+                            margin: 0;
+                            margin-bottom: 3px;
+                        }
+
+                        p {
+
+                            margin: 0;
+                            font-size: 0.9em;
+                        }
+                    }
+
+                    .prix {
+
+                        p {
+
+                            margin: 0;
+                            font-family: $font-text-bold;
+                            font-size: 0.9em;
+                        }
+                    }
+                }
+            }
+
+            .btn {
+
+                display: flex;
+                justify-content: center;
+
+                button {
+                    font-family: $font-text;
+                    padding: 15px 15px;
+                    width: 60%;
+                    margin: 30px 0;
+                    border-radius: 30px;
+                    border: none;
+                    font-weight: 500;
+                    font-size: 1em;
+                    color: $color-white;
+                    background-image: linear-gradient(to top, $color-primary, $color-secondary);
+                    box-shadow: 0px 3px 10px $color-grey;
+                    transition: 0.4s ease;
+
+                    &:hover {
+                        cursor: pointer;
+                        filter: brightness(1.15);
+                        box-shadow: 0px 2px 8px 4px $color-grey;
+                    }
+                }
+            }
+        }
+    }
+}
