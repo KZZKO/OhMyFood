@@ -11,41 +11,57 @@ main {
 
     #menu-pic-one {
 
-        background-image: url(../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-        background-size: 340px;
+        position: absolute;
+        z-index: -1;
+        background-image: url(/assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+        background-size: 400px;
         background-repeat: no-repeat;
-        background-position: left 30% bottom 0%;
-        height: 170px;
+        background-position: left 65% bottom 25%;
+        height: 350px;
+        width: 100%;
+        top: 0;
 
     }
 
     #menu-pic-two {
 
-        background-image: url(../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-        background-size: 340px;
+        position: absolute;
+        z-index: -1;
+        background-image: url(/assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+        background-size: 380px;
         background-repeat: no-repeat;
-        background-position: left 30% bottom 0%;
-        height: 170px;
+        background-position: left 65% bottom 70%;
+        height: 350px;
+        width: 100%;
+        top: 0;
 
     }
 
     #menu-pic-three {
 
-        background-image: url(../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-        background-size: 340px;
+        position: absolute;
+        z-index: -1;
+        background-image: url(/assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+        background-size: 400px;
         background-repeat: no-repeat;
-        background-position: left 30% bottom 0%;
-        height: 170px;
+        background-position: left 50% bottom 25%;
+        height: 350px;
+        width: 100%;
+        top: 0;
 
     }
 
     #menu-pic-four {
 
-        background-image: url(../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-        background-size: 340px;
+        position: absolute;
+        z-index: -1;
+        background-image: url(/assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+        background-size: 400px;
         background-repeat: no-repeat;
-        background-position: left 30% bottom 0%;
-        height: 170px;
+        background-position: left 30% bottom 25%;
+        height: 350px;
+        width: 100%;
+        top: 0;
 
     }
 
@@ -53,6 +69,7 @@ main {
 
         .menu-box {
 
+            margin-top: 60%;
             background: $color-fond-whitegrey;
             padding: 12px;
             border-radius: 40px 40px 0 0;
