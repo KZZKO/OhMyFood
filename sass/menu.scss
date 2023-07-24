@@ -141,53 +141,168 @@ main {
                 .menu-card {
 
                     display: flex;
-                    justify-content: space-between;
-                    align-items: flex-end;
                     background: $color-white;
-                    padding: 12px 12px;
                     border-radius: 15px;
                     margin-bottom: 12px;
                     box-shadow: 0px 3px 10px 0px $shadow-card-menu;
                     animation: appear 1.5s;
+                    width: 100%;
 
-                    .menu-one {
+                    &:hover {
 
-                        @keyframes appear {
+                        .content-box {
+                            // TODO faire la keyframe
+                            animation: notAppearContent 1.5s both;
+                        }
+
+                        .check-box {
+                            // TODO faire la keyframe
+                            animation: appearCheck 1.5s both;
+
+                        }
+
+                        @keyframes notAppearContent {
+                            0% {
+                                width: 100%;
+                            }
 
                             100% {
-
-                                transform: translateY(0%);
-                                opacity: 1;
+                                width: 80%
                             }
+                        }
 
+                        @keyframes appearCheck {
                             0% {
+                                width: 0%;
+                            }
 
-                                transform: translateY(50%);
-                                opacity: 0.1;
+                            100% {
+                                width: 20%
                             }
                         }
 
-                        h4 {
+                    }
 
-                            margin: 0;
-                            margin-bottom: 3px;
+                    &:not(:hover) {
+
+                        .content-box {
+                            // TODO faire la keyframe
+                            animation: appearContent 1.5s both;
                         }
 
-                        p {
+                        .check-box {
+                            // TODO faire la keyframe
+                            animation: notAppearCheck 1.5s both;
 
-                            margin: 0;
-                            font-size: 0.9em;
+                        }
+
+                        @keyframes appearContent {
+                            0% {
+                                width: 80%;
+                            }
+
+                            100% {
+                                width: 100%
+                            }
+                        }
+
+                        @keyframes notAppearCheck {
+                            0% {
+                                width: 20%;
+                            }
+
+                            100% {
+                                width: 0%
+                            }
                         }
                     }
 
-                    .prix {
+                    .content-box {
 
-                        p {
+                        display: flex;
+                        justify-content: space-between;
+                        flex-direction: row;
+                        padding: 8px 12px;
+                        width: 100%;
 
-                            margin: 0;
-                            font-family: $font-text-bold;
-                            font-size: 0.9em;
+
+                        .menu-one {
+
+                            display: flex;
+                            justify-content: center;
+                            flex-direction: column;
+                            gap: 5px;
+                            width: 85%;
+
+                            @keyframes appear {
+
+                                100% {
+
+                                    transform: translateY(0%);
+                                    opacity: 1;
+                                }
+
+                                0% {
+
+                                    transform: translateY(50%);
+                                    opacity: 0.1;
+                                }
+                            }
+
+                            h4 {
+
+                                margin: 0;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                width: 100%;
+                            }
+
+                            p {
+
+                                margin: 0;
+                                font-size: 0.9em;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                overflow: hidden;
+                            }
                         }
+
+                        .prix {
+
+                            display: flex;
+                            align-items: flex-end;
+                            width: 15%;
+                            justify-content: end;
+
+                            p {
+
+                                margin: 0;
+                                margin-bottom: 3px;
+                                font-family: $font-text-bold;
+                                font-size: 0.9em;
+                            }
+                        }
+                    }
+
+                    .check-box {
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 0%;
+                        height: 65px;
+                        background: $color-tr;
+                        border-radius: 0px 15px 15px 0px;
+                        overflow: hidden;
+
+
+
+                        // i {
+
+
+                        // }
+
                     }
                 }
             }

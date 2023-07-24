@@ -1,8 +1,7 @@
 A faire:
 
 - Réglage photo dans les menus
-- hover vert dans les menus
-- Progression du remplissage du coeur 
-- Loader, bonne dimmension
+- Menu doivent apparaitre chacun leurs tour
+- Progression de remplissage du coeur 
 - Régler étiquette "Nouveau" pour qu'elles soient fixes
 - Responsive
