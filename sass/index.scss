@@ -18,8 +18,7 @@
     font-family: $font-text;
 
     input {
-        position: relative;
-        width: 30%;
+        width: 106px;
         margin: -2px 0;
         font-weight: 600;
         font-size: 0.9em;
@@ -76,7 +75,7 @@
     button {
         font-family: $font-text;
         padding: 15px 15px;
-        width: 70%;
+        width: 210px;
         margin: 0 auto;
         margin-top: 10px;
         margin-bottom: 25px;
@@ -120,7 +119,7 @@
         box-shadow: 0px 5px 10px 1px $shadow-light-grey;
         background: $color-fond-whitegrey;
         padding: 25px;
-        width: 83%;
+        width: 260px;
         margin: 0 auto;
         margin-left: 10px;
         margin-bottom: 20px;
@@ -203,7 +202,7 @@
             #image-resto-un {
 
                 background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-                background-size: 360px;
+                background-size: 100%;
                 background-repeat: no-repeat;
                 background-position: right 10% bottom 10%;
                 height: 170px;
@@ -212,7 +211,7 @@
                 #first-etiquette {
 
                     position: absolute;
-                    width: 18%;
+                    width: 58px;
                     padding: 5px 10px;
                     margin: 0;
                     color: $color-td;
@@ -231,7 +230,7 @@
             #image-resto-deux {
 
                 background-image: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
-                background-size: 340px;
+                background-size: 100%;
                 background-repeat: no-repeat;
                 background-position: right 10% bottom 39%;
                 height: 170px;
@@ -240,7 +239,7 @@
                 #second-etiquette {
 
                     position: absolute;
-                    width: 18%;
+                    width: 58px;
                     padding: 5px 10px;
                     margin: 0;
                     color: $color-td;
@@ -259,7 +258,7 @@
             #image-resto-trois {
 
                 background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-                background-size: 340px;
+                background-size: 100%;
                 background-repeat: no-repeat;
                 background-position: left 30% bottom 0%;
                 height: 170px;
@@ -270,7 +269,7 @@
             #image-resto-quatre {
 
                 background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
-                background-size: 350px;
+                background-size: 100%;
                 background-repeat: no-repeat;
                 background-position: right 10% bottom 10%;
                 height: 170px;

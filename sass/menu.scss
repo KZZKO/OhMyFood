@@ -5,71 +5,72 @@
 @import "../sass/layout/footer.scss";
 
 
-// Premier bloc du menu
+// Bloc photo du menu
 
 main {
 
-    #menu-pic-one {
+    .space-pic {
 
-        position: absolute;
-        z-index: -1;
-        background-image: url(/assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-        background-size: 400px;
-        background-repeat: no-repeat;
-        background-position: left 65% bottom 25%;
-        height: 350px;
+        position: relative;
         width: 100%;
-        top: 0;
+        height: 200px;
 
+        #menu-pic-one {
+
+            position: absolute;
+            z-index: -1;
+            background-image: url(/assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: 240px;
+        }
+
+        #menu-pic-two {
+
+            position: absolute;
+            z-index: -1;
+            background-image: url(/assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: 240px;
+        }
+
+        #menu-pic-three {
+
+            position: absolute;
+            z-index: -1;
+            background-image: url(/assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: 240px;
+        }
+
+        #menu-pic-four {
+
+            position: absolute;
+            z-index: -1;
+            background-image: url(/assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: 240px;
+        }
     }
 
-    #menu-pic-two {
 
-        position: absolute;
-        z-index: -1;
-        background-image: url(/assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
-        background-size: 380px;
-        background-repeat: no-repeat;
-        background-position: left 65% bottom 70%;
-        height: 350px;
-        width: 100%;
-        top: 0;
-
-    }
-
-    #menu-pic-three {
-
-        position: absolute;
-        z-index: -1;
-        background-image: url(/assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-        background-size: 400px;
-        background-repeat: no-repeat;
-        background-position: left 50% bottom 25%;
-        height: 350px;
-        width: 100%;
-        top: 0;
-
-    }
-
-    #menu-pic-four {
-
-        position: absolute;
-        z-index: -1;
-        background-image: url(/assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
-        background-size: 400px;
-        background-repeat: no-repeat;
-        background-position: left 30% bottom 25%;
-        height: 350px;
-        width: 100%;
-        top: 0;
-
-    }
+    // Bloc box du menu
 
     section {
 
         .menu-box {
 
-            margin-top: 60%;
             background: $color-fond-whitegrey;
             padding: 12px;
             border-radius: 40px 40px 0 0;
@@ -85,6 +86,7 @@ main {
 
                     font-family: $font-logo-title;
                     font-weight: 500;
+                    font-size: 1.7em;
                     margin: 0;
                 }
 
@@ -92,7 +94,7 @@ main {
 
                     width: 27px;
                     height: 27px;
-                    margin-right: 30px;
+                    margin-right: 20px;
 
                     svg {
 
@@ -121,7 +123,7 @@ main {
 
                     position: relative;
                     margin: 20px 0;
-                    margin-top: 35px;
+                    margin-top: 30px;
                     font-weight: 400;
                     font-size: 1em;
 
@@ -130,7 +132,7 @@ main {
 
                         content: "";
                         height: 3px;
-                        width: 11.5%;
+                        width: 41px;
                         top: 23px;
                         position: absolute;
                         background: $color-tr;
@@ -150,14 +152,16 @@ main {
 
                     &:hover {
 
+                        cursor: pointer;
+
                         .content-box {
-                            // TODO faire la keyframe
-                            animation: notAppearContent 1.5s both;
+
+                            animation: notAppearContent 0.5s both;
                         }
 
                         .check-box {
-                            // TODO faire la keyframe
-                            animation: appearCheck 1.5s both;
+
+                            animation: appearCheck 0.5s both;
 
                         }
 
@@ -186,13 +190,13 @@ main {
                     &:not(:hover) {
 
                         .content-box {
-                            // TODO faire la keyframe
-                            animation: appearContent 1.5s both;
+
+                            animation: appearContent 0.5s both;
                         }
 
                         .check-box {
-                            // TODO faire la keyframe
-                            animation: notAppearCheck 1.5s both;
+
+                            animation: notAppearCheck 0.5s both;
 
                         }
 
@@ -249,6 +253,7 @@ main {
                                 }
                             }
 
+
                             h4 {
 
                                 margin: 0;
@@ -272,8 +277,8 @@ main {
 
                             display: flex;
                             align-items: flex-end;
-                            width: 15%;
                             justify-content: end;
+                            width: 15%;
 
                             p {
 
@@ -315,7 +320,7 @@ main {
                 button {
                     font-family: $font-text;
                     padding: 15px 15px;
-                    width: 60%;
+                    width: 200px;
                     margin: 30px 0;
                     border-radius: 30px;
                     border: none;
