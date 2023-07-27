@@ -207,6 +207,7 @@
                 background-position: right 10% bottom 10%;
                 height: 170px;
                 border-radius: 20px 20px 0 0;
+                position: relative;
 
                 #first-etiquette {
 
@@ -221,7 +222,7 @@
                     font-size: 0.9em;
                     border-radius: 2px;
                     top: 13px;
-                    left: 235px;
+                    right: 13px;
 
                 }
 
@@ -235,6 +236,7 @@
                 background-position: right 10% bottom 39%;
                 height: 170px;
                 border-radius: 20px 20px 0 0;
+                position: relative;
 
                 #second-etiquette {
 
@@ -249,7 +251,7 @@
                     font-size: 0.9em;
                     border-radius: 2px;
                     top: 13px;
-                    left: 235px;
+                    right: 13px;
 
                 }
 
@@ -315,6 +317,7 @@
                         fill: $color-white;
                         stroke: $color-black;
                         stroke-width: 1;
+                        transition: 0.2s ease;
 
 
                         &:hover {
