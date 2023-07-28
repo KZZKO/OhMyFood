@@ -1,11 +1,11 @@
-// Couleur du site
+// --------- Couleur du site ---------
 
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tr: #99E2D0;
 $color-td: #008766;
 
-// Nuance du site
+// --------- Nuance du site ---------
 
 $color-fond-gris: #EAEAEA;
 $color-fond-whitegrey: #F6F6F6;
@@ -14,17 +14,17 @@ $color-midgrey: #5e5e5e;
 $color-grey: #a5a5a5;
 $color-white: #ffffff;
 
-// Nuance shadows
+// --------- Nuance shadows ---------
 
 $shadow-light-grey: #dddddd;
 $shadow-card: #dddddd5e;
 $shadow-card-menu: #d3d3d3ab;
 
-// Nuance police
+// --------- Nuance police ---------
 
 $color-police-darkgrey: #353535;
 
-// Police du site
+// --------- Police du site ---------
 
 @font-face {
     font-family: 'Shrikhand';
@@ -42,7 +42,7 @@ $color-police-darkgrey: #353535;
 }
 
 
-// Mixins et variables
+// --------- Mixins et variables ---------
 
 $font-logo-title: 'Shrikhand';
 
@@ -50,7 +50,24 @@ $font-text: 'Roboto';
 
 $font-text-bold: 'Roboto bold';
 
-// Ajustement du site
+// - Responsive -
+
+// Mobil version
+$xs: 420px;
+
+// Large Mobil version
+$sm: 550px;
+
+// Tablet version
+$md: 768px;
+
+// Desktop Version
+$lg: 1024px;
+
+// Large desktop Version
+// $xl: px;
+
+// --------- Ajustement du site ---------
 
 * {
     scroll-behavior: smooth;

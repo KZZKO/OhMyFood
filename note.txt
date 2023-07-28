@@ -6,12 +6,4 @@ A faire:
 - Responsive:
 
 - Espace du logo qui grossi
-- Titre qui grossi
-- min-height sur les img avec background-position center 
-
-- Bloc fonctionnement min height 500px > 768px
-flex-direction row 
-
-De 375 à 720 px pour les téléphones mobiles. 
-De 768 à 900 px pour les tablettes en mode portrait. 
-De 900 à 1024 px pour les tablettes en mode paysage.
+- Titre qui grossi 
