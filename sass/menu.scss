@@ -75,6 +75,11 @@ main {
             padding: 12px;
             border-radius: 40px 40px 0 0;
 
+            @media (min-width: $md) {
+
+                padding: 40px;
+            }
+
             .menu-title {
 
                 display: flex;
@@ -255,6 +260,11 @@ main {
                             gap: 5px;
                             width: 85%;
 
+                            @media (min-width: $md) {
+
+                                width: 90%;
+                            }
+
                             h4 {
 
                                 margin: 0;
@@ -280,6 +290,11 @@ main {
                             align-items: flex-end;
                             justify-content: end;
                             width: 15%;
+
+                            @media (min-width: $md) {
+
+                                width: 10%;
+                            }
 
                             p {
 

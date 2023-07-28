@@ -58,6 +58,11 @@
         gap: 25px;
     }
 
+    @media (min-width: $lg) {
+
+        padding: 10px;
+    }
+
     h2 {
         font-family: $font-text-bold;
         font-weight: 900;
@@ -70,6 +75,11 @@
         @media (min-width: $sm) {
 
             font-size: 1.7em;
+        }
+
+        @media (min-width: $lg) {
+
+            font-size: 2.33em;
         }
     }
 
@@ -109,280 +119,378 @@
 
 // Deuxième bloc du site
 
-.mid-bloc {
+.mid-section {
 
     background: $color-white;
-    padding: 20px;
-    font-family: $font-text;
 
-    @media (min-width: $sm) {
+    .mid-bloc {
 
-        padding: 40px;
-        padding-bottom: 70px;
-    }
+        background: $color-white;
+        padding: 20px;
+        font-family: $font-text;
 
-    h2 {
-        margin: 0 auto;
-        font-weight: 600;
-        font-family: $font-text-bold;
-        margin: 20px 0;
-    }
+        @media (min-width: $sm) {
 
-    .all-bloc {
+            padding: 40px;
+            padding-bottom: 50px;
+        }
 
-        .bloc-fonctionnement {
-            display: flex;
-            border-radius: 20px;
-            box-shadow: 0px 5px 10px 1px $shadow-light-grey;
-            background: $color-fond-whitegrey;
-            padding: 25px;
-            width: 83%;
+        @media (min-width: $md) {
+
+            padding: 60px;
+        }
+
+        @media (min-width: $lg) {
+
+            max-width: 1064px;
             margin: 0 auto;
-            margin-left: 10px;
-            margin-bottom: 20px;
+            padding: 40px 60px;
+        }
 
-            @media (min-width: $xs) {
+        h2 {
+            margin: 0 auto;
+            font-weight: 600;
+            font-family: $font-text-bold;
+            margin: 20px 0;
 
-                width: 86%;
-            }
+            @media (min-width: $lg) {
 
-            @media (min-width: $sm) {
-
-                width: 70%;
-                margin: 0 auto;
+                margin: 0;
                 margin-bottom: 20px;
             }
+        }
 
-            .numero-fonctionnement {
+        .all-bloc {
 
-                position: relative;
+            @media (min-width: $lg) {
+
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 35px;
+            }
+
+            .bloc-fonctionnement {
+                display: flex;
+                border-radius: 20px;
+                box-shadow: 0px 5px 10px 1px $shadow-light-grey;
+                background: $color-fond-whitegrey;
+                padding: 25px;
+                width: 83%;
+                margin: 0 auto;
+                margin-left: 10px;
+                margin-bottom: 20px;
+
+                @media (min-width: $xs) {
+
+                    width: 86%;
+                }
+
+                @media (min-width: $sm) {
+
+                    width: 70%;
+                    margin: 0 auto;
+                    margin-bottom: 20px;
+                }
+
+                @media (min-width: $lg) {
+
+                    width: 270px;
+                    margin: 0;
+                }
+
+                .numero-fonctionnement {
+
+                    position: relative;
+
+                    p {
+                        position: absolute;
+                        left: -37px;
+                        margin: 0 auto;
+                        padding: 4px 8px;
+                        border-radius: 30px;
+                        color: $color-white;
+                        background: $color-primary;
+                        font-size: 0.8em;
+                        font-weight: 500;
+                    }
+
+                }
 
                 p {
-                    position: absolute;
-                    left: -37px;
-                    margin: 0 auto;
-                    padding: 4px 8px;
-                    border-radius: 30px;
-                    color: $color-white;
-                    background: $color-primary;
-                    font-size: 0.8em;
-                    font-weight: 500;
+                    margin: 0;
+                    font-weight: 600;
+
+                    i {
+                        font-size: large;
+                        margin-left: 10px;
+                        margin-right: 20px;
+                    }
                 }
 
-            }
-
-            p {
-                margin: 0;
-                font-weight: 600;
-
-                i {
-                    font-size: large;
-                    margin-left: 10px;
-                    margin-right: 20px;
+                &:nth-child(4) {
+                    margin-bottom: 50px;
                 }
-            }
-
-            &:nth-child(4) {
-                margin-bottom: 50px;
             }
         }
     }
 }
 
+
 // Troisième bloc du site
+.bottom-section {
 
-.restaurants {
-
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    padding-bottom: 70px;
     background: $color-fond-whitegrey;
-    gap: 18px;
 
-    @media (min-width: $sm) {
+    .restaurants {
 
-        padding: 40px;
-        padding-bottom: 100px;
-        gap: 25px;
-    }
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        padding-bottom: 70px;
+        background: $color-fond-whitegrey;
+        gap: 18px;
 
-    h2 {
+        @media (min-width: $sm) {
 
-        font-family: $font-text-bold;
-        margin: 0;
-        margin-top: 35px;
-        margin-bottom: 5px;
-
-    }
-
-    .links-restaurants {
-
-        text-decoration: none;
-        border-radius: 20px 20px 20px 20px;
-        color: $color-police-darkgrey;
-
-        &:visited {
-            color: $color-police-darkgrey;
+            padding: 40px;
+            padding-bottom: 100px;
+            gap: 25px;
         }
 
-        &:active {
-            color: $color-police-darkgrey;
+        @media (min-width: $md) {
+
+            padding: 60px;
+            padding-bottom: 100px;
+            padding-top: 30px;
         }
 
-        .card {
-            position: relative;
-            border-radius: 20px;
-            box-shadow: 0px 5px 10px 1px $shadow-card;
+        @media (min-width: $lg) {
 
-            #image-resto-un {
+            max-width: 1064px;
+            margin: 0 auto;
+            padding: 30px 60px;
+        }
 
-                background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-                background-size: 100%;
-                background-repeat: no-repeat;
-                background-position: right 10% bottom 10%;
-                height: 170px;
-                border-radius: 20px 20px 0 0;
-                position: relative;
+        h2 {
 
-                @media (min-width: $xs) {
+            font-family: $font-text-bold;
+            margin: 0;
+            margin-top: 35px;
+            margin-bottom: 5px;
 
-                    background-position: center;
-                }
+            @media (min-width: $lg) {
 
-                #first-etiquette {
-
-                    position: absolute;
-                    width: 58px;
-                    padding: 5px 10px;
-                    margin: 0;
-                    color: $color-td;
-                    background: $color-tr;
-                    font-family: $font-text;
-                    font-weight: 600;
-                    font-size: 0.9em;
-                    border-radius: 2px;
-                    top: 13px;
-                    right: 13px;
-
-                }
-
+                margin: 0;
             }
 
-            #image-resto-deux {
+        }
 
-                background-image: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
-                background-size: 100%;
-                background-repeat: no-repeat;
-                background-position: right 10% bottom 39%;
-                height: 170px;
-                border-radius: 20px 20px 0 0;
-                position: relative;
+        .card-restaurants {
 
-                @media (min-width: $xs) {
+            display: flex;
+            gap: 18px;
+            flex-direction: column;
 
-                    background-position: center;
-                }
-
-                #second-etiquette {
-
-                    position: absolute;
-                    width: 58px;
-                    padding: 5px 10px;
-                    margin: 0;
-                    color: $color-td;
-                    background: $color-tr;
-                    font-family: $font-text;
-                    font-weight: 600;
-                    font-size: 0.9em;
-                    border-radius: 2px;
-                    top: 13px;
-                    right: 13px;
-
-                }
-
-            }
-
-            #image-resto-trois {
-
-                background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-                background-size: 100%;
-                background-repeat: no-repeat;
-                background-position: left 30% bottom 0%;
-                height: 170px;
-                border-radius: 20px 20px 0 0;
-
-                @media (min-width: $xs) {
-
-                    background-position: center;
-                }
-
-            }
-
-            #image-resto-quatre {
-
-                background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
-                background-size: 100%;
-                background-repeat: no-repeat;
-                background-position: right 10% bottom 10%;
-                height: 170px;
-                border-radius: 20px 20px 0 0;
-
-                @media (min-width: $xs) {
-
-                    background-position: center;
-                }
-
-            }
-
-            .card-bottom {
+            @media (min-width: $lg) {
 
                 display: flex;
-                justify-content: space-between;
-                background: $color-white;
-                border-radius: 0 0 20px 20px;
-                line-height: 23px;
-                padding: 15px 10px;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 100%;
+                gap: 50px 80px;
+            }
 
-                h3 {
-                    margin: 0;
-                    font-family: $font-text-bold;
-                    font-size: 1.1em;
+            @media (min-width: $xl) {
 
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 100%;
+                gap: 50px 100px;
+            }
+
+            .links-restaurants {
+
+                text-decoration: none;
+                border-radius: 20px 20px 20px 20px;
+                color: $color-police-darkgrey;
+
+                @media (min-width: $lg) {
+
+                    width: 45%;
                 }
 
-                p {
-                    margin: 0;
-                    font-family: $font-text;
-                    font-size: 1em;
+                @media (min-width: $xl) {
+
+                    width: 480px;
+                }
+
+                &:visited {
                     color: $color-police-darkgrey;
-
                 }
 
-                .card-heart {
+                &:active {
+                    color: $color-police-darkgrey;
+                }
 
-                    width: 27px;
-                    height: 27px;
-                    margin-top: 5px;
-                    margin-right: 10px;
+                .card {
+                    position: relative;
+                    border-radius: 20px;
+                    box-shadow: 0px 5px 10px 1px $shadow-card;
 
-                    svg {
+                    #image-resto-un {
 
-                        width: 27px;
-                        height: 27px;
-                        fill: $color-white;
-                        stroke: $color-black;
-                        stroke-width: 1;
-                        transition: 0.2s ease;
+                        background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+                        background-size: 100%;
+                        background-repeat: no-repeat;
+                        background-position: right 10% bottom 10%;
+                        height: 170px;
+                        border-radius: 20px 20px 0 0;
+                        position: relative;
 
+                        @media (min-width: $xs) {
 
-                        &:hover {
+                            background-position: center;
+                        }
 
-                            fill: url(#gradient-heart);
-                            stroke: transparent;
+                        #first-etiquette {
+
+                            position: absolute;
+                            width: 58px;
+                            padding: 5px 10px;
+                            margin: 0;
+                            color: $color-td;
+                            background: $color-tr;
+                            font-family: $font-text;
+                            font-weight: 600;
+                            font-size: 0.9em;
+                            border-radius: 2px;
+                            top: 13px;
+                            right: 13px;
 
                         }
 
+                    }
+
+                    #image-resto-deux {
+
+                        background-image: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+                        background-size: 100%;
+                        background-repeat: no-repeat;
+                        background-position: right 10% bottom 39%;
+                        height: 170px;
+                        border-radius: 20px 20px 0 0;
+                        position: relative;
+
+                        @media (min-width: $xs) {
+
+                            background-position: center;
+                        }
+
+                        #second-etiquette {
+
+                            position: absolute;
+                            width: 58px;
+                            padding: 5px 10px;
+                            margin: 0;
+                            color: $color-td;
+                            background: $color-tr;
+                            font-family: $font-text;
+                            font-weight: 600;
+                            font-size: 0.9em;
+                            border-radius: 2px;
+                            top: 13px;
+                            right: 13px;
+
+                        }
+
+                    }
+
+                    #image-resto-trois {
+
+                        background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+                        background-size: 100%;
+                        background-repeat: no-repeat;
+                        background-position: left 30% bottom 0%;
+                        height: 170px;
+                        border-radius: 20px 20px 0 0;
+
+                        @media (min-width: $xs) {
+
+                            background-position: center;
+                        }
+
+                    }
+
+                    #image-resto-quatre {
+
+                        background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+                        background-size: 100%;
+                        background-repeat: no-repeat;
+                        background-position: right 10% bottom 10%;
+                        height: 170px;
+                        border-radius: 20px 20px 0 0;
+
+                        @media (min-width: $xs) {
+
+                            background-position: center;
+                        }
+
+                    }
+
+                    .card-bottom {
+
+                        display: flex;
+                        justify-content: space-between;
+                        background: $color-white;
+                        border-radius: 0 0 20px 20px;
+                        line-height: 23px;
+                        padding: 15px 10px;
+
+                        h3 {
+                            margin: 0;
+                            font-family: $font-text-bold;
+                            font-size: 1.1em;
+
+                        }
+
+                        p {
+                            margin: 0;
+                            font-family: $font-text;
+                            font-size: 1em;
+                            color: $color-police-darkgrey;
+
+                        }
+
+                        .card-heart {
+
+                            width: 27px;
+                            height: 27px;
+                            margin-top: 5px;
+                            margin-right: 10px;
+
+                            svg {
+
+                                width: 27px;
+                                height: 27px;
+                                fill: $color-white;
+                                stroke: $color-black;
+                                stroke-width: 1;
+                                transition: 0.2s ease;
+
+
+                                &:hover {
+
+                                    fill: url(#gradient-heart);
+                                    stroke: transparent;
+
+                                }
+
+                            }
+                        }
                     }
                 }
             }

@@ -16,12 +16,29 @@ footer {
         color: $color-white;
         padding: 25px;
 
+        @media (min-width: $md) {
+
+            flex-direction: row-reverse;
+            justify-content: flex-start;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            gap: 30px;
+        }
+
 
         h4 {
             margin: 0;
             font-size: 1.1em;
             font-family: $font-logo-title;
             font-weight: 500;
+
+            @media (min-width: $md) {
+
+                margin: 0;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.3em;
+            }
         }
 
         ul {
@@ -32,6 +49,14 @@ footer {
             gap: 8px;
             margin: 0;
             margin-top: 15px;
+
+            @media (min-width: $md) {
+
+                flex-direction: row;
+                align-items: center;
+                gap: 15px;
+                margin: 0;
+            }
 
             li {
 
