@@ -5,5 +5,8 @@ A faire:
 
 - Responsive:
 
-- Espace du logo qui grossi
-- Titre qui grossi 
+- footer
+- photos index
+- Checkbox desktop
+
+- Check
