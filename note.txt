@@ -6,7 +6,3 @@ A faire:
 - Responsive:
 
 - footer
-- photos index
-- Checkbox desktop
-
-- Check

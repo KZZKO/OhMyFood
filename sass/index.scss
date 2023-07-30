@@ -356,6 +356,16 @@
                             background-position: center;
                         }
 
+                        @media (min-width: $lg) {
+
+                            background-position: right 10% bottom 20%;
+                        }
+
+                        @media (min-width: $xl) {
+
+                            background-position: right 10% bottom 30%;
+                        }
+
                         #first-etiquette {
 
                             position: absolute;
@@ -388,6 +398,11 @@
                         @media (min-width: $xs) {
 
                             background-position: center;
+                        }
+
+                        @media (min-width: $lg) {
+
+                            background-position: right 10% bottom 40%;
                         }
 
                         #second-etiquette {
@@ -423,6 +438,11 @@
                             background-position: center;
                         }
 
+                        @media (min-width: $lg) {
+
+                            background-position: right 10% bottom 20%;
+                        }
+
                     }
 
                     #image-resto-quatre {
@@ -437,6 +457,11 @@
                         @media (min-width: $xs) {
 
                             background-position: center;
+                        }
+
+                        @media (min-width: $lg) {
+
+                            background-position: right 10% bottom 20%;
                         }
 
                     }

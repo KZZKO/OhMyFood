@@ -17,7 +17,7 @@ main {
 
         @media (min-width: $lg) {
 
-            height: 215px;
+            height: 280px;
         }
 
         @media (min-width: $xl) {
@@ -36,6 +36,11 @@ main {
             width: 100%;
             height: 240px;
 
+            @media (min-width: $lg) {
+
+                height: 300px;
+            }
+
             @media (min-width: $xl) {
 
                 height: 400px;
@@ -52,6 +57,11 @@ main {
             background-position: center;
             width: 100%;
             height: 240px;
+
+            @media (min-width: $lg) {
+
+                height: 300px;
+            }
 
             @media (min-width: $xl) {
 
@@ -70,6 +80,11 @@ main {
             width: 100%;
             height: 240px;
 
+            @media (min-width: $lg) {
+
+                height: 300px;
+            }
+
             @media (min-width: $xl) {
 
                 height: 400px;
@@ -86,6 +101,11 @@ main {
             background-position: center;
             width: 100%;
             height: 240px;
+
+            @media (min-width: $lg) {
+
+                height: 300px;
+            }
 
             @media (min-width: $xl) {
 
@@ -248,7 +268,7 @@ main {
                             }
 
                             100% {
-                                width: 80%
+                                width: 80%;
                             }
                         }
 
@@ -258,8 +278,32 @@ main {
                             }
 
                             100% {
-                                width: 20%
+                                width: 20%;
                             }
+                        }
+
+                        @media (min-width: $sm) {
+
+                            @keyframes notAppearContent {
+                                0% {
+                                    width: 100%;
+                                }
+
+                                100% {
+                                    width: 85%;
+                                }
+                            }
+
+                            @keyframes appearCheck {
+                                0% {
+                                    width: 0%;
+                                }
+
+                                100% {
+                                    width: 15%;
+                                }
+                            }
+
                         }
 
                     }
@@ -295,6 +339,30 @@ main {
                             100% {
                                 width: 0%
                             }
+                        }
+
+                        @media (min-width: $sm) {
+
+                            @keyframes appearContent {
+                                0% {
+                                    width: 85%;
+                                }
+
+                                100% {
+                                    width: 100%
+                                }
+                            }
+
+                            @keyframes notAppearCheck {
+                                0% {
+                                    width: 15%;
+                                }
+
+                                100% {
+                                    width: 0%
+                                }
+                            }
+
                         }
                     }
 
