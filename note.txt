@@ -1,8 +1,0 @@
-A faire:
-
-- Menu doivent apparaitre chacun leurs tour
-
-
-- Responsive:
-
-- footer
