@@ -17,6 +17,11 @@
     gap: 10px;
     font-family: $font-text;
 
+    i {
+
+        color: $color-police-darkgrey;
+    }
+
     input {
         width: 106px;
         margin: -2px 0;
@@ -213,6 +218,7 @@
                         background: $color-primary;
                         font-size: 0.8em;
                         font-weight: 500;
+
                     }
 
                 }
@@ -225,6 +231,12 @@
                         font-size: large;
                         margin-left: 10px;
                         margin-right: 20px;
+                        color: $color-card-grey;
+                    }
+
+                    .color-purple-card {
+
+                        color: $color-primary;
                     }
                 }
 
@@ -502,28 +514,56 @@
 
                         .card-heart {
 
-                            width: 27px;
-                            height: 27px;
-                            margin-top: 5px;
-                            margin-right: 10px;
+                            fill: transparent;
+                            stroke: $color-black;
+                            stroke-width: 20;
+                            height: 23px;
+                            margin: 7px 8px;
 
                             svg {
 
-                                width: 27px;
-                                height: 27px;
-                                fill: $color-white;
-                                stroke: $color-black;
-                                stroke-width: 1;
-                                transition: 0.2s ease;
+                                overflow: visible;
+                                width: 23px;
 
+                                path {
+                                    stroke-dashoffset: 0;
+                                    stroke-dasharray: 1550;
+                                    transform-origin: center;
 
-                                &:hover {
+                                    &:hover {
 
-                                    fill: url(#gradient-heart);
-                                    stroke: transparent;
-
+                                        animation: stroke-animation 1.5s ease-in-out forwards;
+                                    }
                                 }
 
+                                @keyframes stroke-animation {
+                                    0% {
+                                        stroke-dashoffset: 0;
+                                    }
+
+                                    30% {
+                                        stroke-dashoffset: 1550;
+                                    }
+
+                                    60% {
+                                        stroke-dashoffset: 3100;
+                                        fill: transparent;
+                                        transform: scale(1);
+                                    }
+
+                                    80% {
+                                        transform: scale(1.2);
+                                    }
+
+                                    90% {
+                                        transform: scale(1);
+                                    }
+
+                                    100% {
+                                        stroke-dashoffset: 3100;
+                                        fill: url(#heart-gradient);
+                                    }
+                                }
                             }
                         }
                     }

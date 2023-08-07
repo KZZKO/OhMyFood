@@ -170,29 +170,59 @@ main {
 
                 }
 
-                .menu-heart {
+                .card-heart {
 
-                    width: 27px;
-                    height: 27px;
-                    margin-right: 20px;
+                    fill: transparent;
+                    stroke: $color-black;
+                    stroke-width: 20;
+                    height: 23px;
+                    margin: 7px 8px;
 
                     svg {
 
-                        width: 27px;
-                        height: 27px;
-                        fill: $color-fond-whitegrey;
-                        stroke: $color-black;
-                        stroke-width: 1;
-                        transition: 0.2s ease;
+                        overflow: visible;
+                        width: 23px;
 
-                        &:hover {
+                        path {
+                            stroke-dashoffset: 0;
+                            stroke-dasharray: 1550;
+                            transform-origin: center;
 
-                            fill: url(#gradient-heart);
-                            stroke: transparent;
-                            cursor: pointer;
+                            &:hover {
 
+                                animation: stroke-animation 1.5s ease-in-out forwards;
+                                cursor: pointer;
+                            }
                         }
 
+                        @keyframes stroke-animation {
+                            0% {
+                                stroke-dashoffset: 0;
+                            }
+
+                            30% {
+                                stroke-dashoffset: 1550;
+                            }
+
+                            60% {
+                                stroke-dashoffset: 3100;
+                                fill: transparent;
+                                transform: scale(1);
+                            }
+
+                            80% {
+                                transform: scale(1.2);
+                            }
+
+                            90% {
+                                transform: scale(1);
+                            }
+
+                            100% {
+                                stroke-dashoffset: 3100;
+                                fill: url(#heart-gradient);
+                            }
+                        }
                     }
                 }
             }
@@ -447,10 +477,10 @@ main {
 
 
 
-                            // i {
+                            i {
 
-
-                            // }
+                                color: $color-white;
+                            }
 
                         }
                     }
