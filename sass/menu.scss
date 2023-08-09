@@ -173,6 +173,13 @@ main {
                 .card-heart-menu {
 
                     position: relative;
+                    margin-right: 20px;
+
+                    @media (min-width: $lg) {
+
+                        margin-right: 0;
+
+                    }
 
                     .stroke {
 
