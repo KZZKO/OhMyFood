@@ -29,7 +29,7 @@
         font-size: 0.9em;
         border: 2px solid transparent;
         background-color: $color-fond-gris;
-        transition: border 0.2s linear;
+        transition: border 0.4s linear;
 
         &::placeholder {
             color: $color-police-darkgrey;
@@ -514,55 +514,33 @@
 
                         .card-heart {
 
-                            fill: transparent;
-                            stroke: $color-black;
-                            stroke-width: 20;
-                            height: 23px;
-                            margin: 7px 8px;
+                            position: relative;
+                            margin-top: 10px;
+                            margin-right: 5px;
 
-                            svg {
+                            .stroke {
 
-                                overflow: visible;
-                                width: 23px;
+                                color: $color-black;
+                                font-size: 1.6em;
+                            }
 
-                                path {
-                                    stroke-dashoffset: 0;
-                                    stroke-dasharray: 1550;
-                                    transform-origin: center;
+                            .fill {
 
-                                    &:hover {
+                                position: absolute;
+                                font-size: 1.68em;
+                                bottom: 11.6px;
+                                right: -1px;
+                                color: transparent;
+                                background-image: linear-gradient($color-heart 20%, $color-heart-two 80%);
+                                background-clip: text;
+                                -webkit-background-clip: text;
+                                line-height: 1;
+                                opacity: 0;
+                                transition: 0.6s ease-in-out;
 
-                                        animation: stroke-animation 1.5s ease-in-out forwards;
-                                    }
-                                }
+                                &:hover {
 
-                                @keyframes stroke-animation {
-                                    0% {
-                                        stroke-dashoffset: 0;
-                                    }
-
-                                    30% {
-                                        stroke-dashoffset: 1550;
-                                    }
-
-                                    60% {
-                                        stroke-dashoffset: 3100;
-                                        fill: transparent;
-                                        transform: scale(1);
-                                    }
-
-                                    80% {
-                                        transform: scale(1.2);
-                                    }
-
-                                    90% {
-                                        transform: scale(1);
-                                    }
-
-                                    100% {
-                                        stroke-dashoffset: 3100;
-                                        fill: url(#heart-gradient);
-                                    }
+                                    opacity: 1;
                                 }
                             }
                         }
